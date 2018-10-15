@@ -153,14 +153,17 @@ public class Game {
                                 System.out.println("Input must be numeric. Re-enter frame.");
                             }
                         } else {
-                            System.out.println("Incorect number of inputs. Re-enter frame");
+                            System.out.println("Incorect number of inputs. Re-enter frame."
+                                    + " Input must be two numbers on a frame that isn't the last");
+                            System.out.println("and three numbers on the last frame. If the bonus bowl "
+                                    + "isn't awarded, enter a zero as the third number");
                         }
 
                         if (Game.isLastFrame()) {
                             if (bowls.length == 3) {
                                 firstBowl = bowls[0];
                                 secondBowl = bowls[1];
-                                thirdBowl = bowls[1];
+                                thirdBowl = bowls[2];
 
                                 if (Frame.isNumeric(firstBowl) && Frame.isNumeric(secondBowl)
                                         && Frame.isNumeric(thirdBowl)) // if number
@@ -174,7 +177,10 @@ public class Game {
                                     System.out.println("Input must be numeric. Re-enter frame");
                                 }
                             } else {
-                                System.out.println("Incorrect number of inputs. Re-enter frame.");
+                                System.out.println("Incorect number of inputs. Re-enter frame."
+                                        + " Input must be two numbers on a frame that isn't the last");
+                                System.out.println("and three numbers on the last frame. If the bonus bowl "
+                                        + "isn't awarded, enter a zero as the third number");
                             }
                         }
                     }

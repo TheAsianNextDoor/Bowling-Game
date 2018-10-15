@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  * @author aaron
  */
 public class Frame implements IBowlingScore {
-    
+
     private int[] frameScore = new int[3];
     private int currentPinCount = Game.maxPinCount + 1; // (+1) for random method
 
@@ -63,14 +63,14 @@ public class Frame implements IBowlingScore {
      */
     @Override
     public void recordFrame(int[] pinsKnockedDown) {
-        
+
         setFirstPoint(pinsKnockedDown[0]);
         setSecondPoint(pinsKnockedDown[1]);
-        
+
         try {
             setThirdPoint(pinsKnockedDown[2]);
         } catch (Exception e) {
-            
+
         }
     }
 
