@@ -5,9 +5,10 @@ This program is designed to simulate and score a single player game of Bowling. 
 
 Input 'R' for the random bowl
 Input 'U' for the user inputed bowl
-Input 'S' for the score
+Input 'S' for the score			
     Press the Enter... to lock in selection
 
+Side note: for the user input optoin, the user must input only two numbers for frames that aren't the last, must input three numbers for last frame, input zero in bounus frame if not earned )
 
 The Java Scanner is located in the main method. It handles all of the user input logic, including entering the user inputed bowl option. The user inputed bowl option (logic found in the main method) expects that the user is inputing game legal points. For example, a score in the first frame cannot be 18,9, but this input can be entered into the program. The method was designed under the assumption that the user knows the bassic rules of bowling. However, the input is checked to see if it is numeric.
 
